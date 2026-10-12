@@ -2,6 +2,7 @@
 
 ## 1. Origen del Dataset
 El conjunto de datos utilizado proviene de registros de pozos estándar de la industria hidrocarburífera (empleando variables petrofísicas clásicas como Rayos Gamma, Densidad, Neutrón, etc.), facilitados en el marco del curso de Data Science de Fundación YPF.
+'https://www.kaggle.com/code/imeintanis/log-facies-nn-bayesian-optimization-skopt' 
 
 ## 2. Resumen y Objetivo del Proyecto
 El objetivo principal de este proyecto es desarrollar un modelo de Machine Learning supervisado capaz de automatizar la clasificación de litofacies en intervalos de pozos donde no se cuenta con testigos corona físicos. Esto permite optimizar la interpretación geológica y petrofísica del subsuelo de manera eficiente y precisa.
