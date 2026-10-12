@@ -1,4 +1,5 @@
 # Predicción Automática de Litofacies en Pozos Petroleros 🛢️📊
+Integrantes: Biaiñ Joaquin, Facenda Selena y Ferreyra iara
 
 ## 1. Origen del Dataset
 El conjunto de datos utilizado proviene de registros de pozos estándar de la industria hidrocarburífera (empleando variables petrofísicas clásicas como Rayos Gamma, Densidad, Neutrón, etc.), facilitados en el marco del curso de Data Science de Fundación YPF.
