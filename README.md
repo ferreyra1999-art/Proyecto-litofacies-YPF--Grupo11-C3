@@ -1,43 +1,7 @@
-# Predicción Automática de Litofacies en Pozos Petroleros 🛢️📊
-Integrantes: Biaiñ Joaquin, Facenda Selena y Ferreyra iara
+# Proyecto de Clasificación de Litofacies y Electrofacies mediante Machine Learning 🛢️📊
 
-## 1. Origen del Dataset
-El conjunto de datos utilizado proviene de registros de pozos estándar de la industria hidrocarburífera (empleando variables petrofísicas clásicas como Rayos Gamma, Densidad, Neutrón, etc.), facilitados en el marco del curso de Data Science de Fundación YPF.
-'https://www.kaggle.com/code/imeintanis/log-facies-nn-bayesian-optimization-skopt' 
+Repositorio  del **Grupo 11** para el desarrollo del proyecto de predicción y análisis de facies utilizando registros de pozos. Este proyecto integra enfoques tanto de **aprendizaje supervisado** como de **aprendizaje no supervisado** para caracterizar la columna estratigráfica y optimizar la zonificación de reservorios.
 
-## 2. Resumen y Objetivo del Proyecto
-El objetivo principal de este proyecto es desarrollar un modelo de Machine Learning supervisado capaz de automatizar la clasificación de litofacies en intervalos de pozos donde no se cuenta con testigos corona físicos. Esto permite optimizar la interpretación geológica y petrofísica del subsuelo de manera eficiente y precisa.
-
-## 3. Hallazgos del Análisis Exploratorio (AED)
-A través de la exploración de datos con Pandas y visualizaciones estadísticas, se identificó que las variables petrofísicas presentan correlaciones directas con las distintas litologías. Asimismo, se detectaron superposiciones en las respuestas de las herramientas para ciertas facies intermedias, lo que anticipó los desafíos que luego enfrentarían los modelos predictivos en dichas clases.
-
-## 4. Modelos Ajustados y Resultados
-* **Preprocesamiento:** Se implementó un pipeline robusto utilizando `ColumnTransformer` para escalar variables numéricas (`StandardScaler`) y codificar variables categóricas, evitando la fuga de datos (*data leakage*).
-* **Modelo Baseline:** Se entrenó un clasificador basado en **Random Forest**, obteniendo un *Accuracy* inicial de **0.74**.
-* **Optimización:** Se aplicó una búsqueda de hiperparámetros mediante `GridSearchCV` con validación cruzada (`cv=5`), determinando una configuración óptima de 200 árboles (`n_estimators: 200`).
-* **Evaluación Visual:** Mediante una matriz de confusión normalizada, se comprobó que el modelo clasifica con alta precisión las facies extremas y que las confusiones remanentes se concentran entre litofacies de respuestas petrofísicas similares, respaldando la coherencia geológica de las predicciones.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Proyecto de Clasificación de Litofacies y Electrofacies mediante Machine Learning
-
-Repositorio oficial del **Grupo 11** para el desarrollo del proyecto de predicción y análisis de facies utilizando registros de pozos (basado en el dataset del concurso SEG 2016). Este proyecto integra enfoques tanto de **aprendizaje supervisado** como de **aprendizaje no supervisado** para caracterizar la columna estratigráfica y optimizar la zonificación de reservorios.
 
 ---
 
@@ -46,11 +10,15 @@ Repositorio oficial del **Grupo 11** para el desarrollo del proyecto de predicci
 El repositorio se encuentra organizado de forma modular según las sucesivas etapas de avance del proyecto:
 * `Pre-entrega 2/`: Exploración inicial de datos, limpieza y análisis exploratorio (EDA) de los registros de pozo.
 * `Pre-entrega 3/`: Implementación y optimización de modelos de **aprendizaje supervisado** para la predicción de litofacies a partir de datos etiquetados.
-* `Pre-entrega 4/` (Actual): Implementación de flujos de **aprendizaje no supervisado** (Ingeniería de características, PCA y K-Means) para la definición de electrofacies y validación estratigráfica.
+* `Pre-entrega 4/` : Implementación de flujos de **aprendizaje no supervisado** (Ingeniería de características, PCA y K-Means) para la definición de electrofacies y validación estratigráfica.
 
 ---
 
 ## 🚀 Metodología y Flujo de Trabajo
+
+## Origen del Dataset
+El conjunto de datos utilizado proviene de registros de pozos estándar de la industria hidrocarburífera (empleando variables petrofísicas clásicas como Rayos Gamma, Densidad, Neutrón, etc.), facilitados en el marco del curso de Data Science de Fundación YPF.
+'https://www.kaggle.com/code/imeintanis/log-facies-nn-bayesian-optimization-skopt'
 
 ### 1. Aprendizaje Supervisado (Pre-entregas 2 y 3)
 * **Objetivo:** Predecir las litofacies originales definidas por descripción de testigos (coronas).
@@ -91,4 +59,4 @@ El proyecto está desarrollado en **Python** y requiere las siguientes librería
 ---
 
 ## 👥 Autores
-* **Grupo 11** — Proyecto Académico / Aplicación de Geociencias y Machine Learning.
+* **Grupo 11** — Integrantes: Biaiñ Joaquin, Facenda Selena y Ferreyra iara.
